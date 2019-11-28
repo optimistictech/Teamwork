@@ -1,0 +1,25 @@
+language: node_js
+
+node_js:
+  - "stable"
+
+install: npm install
+
+services:
+  - postgresql
+
+addons:
+  postgresql: "9.6"
+
+env:
+  - NODE_ENV=test
+
+before_script:
+  - psql -c 'create database root;' -U postgres
+  - psql "dbname='root' user='postgres' password='root' host='127.0.0.1'" -f dbinit.sql
+
+script:
+  - npm test
+
+after_success:
+  - npm run coverage

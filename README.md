@@ -1,21 +1,6 @@
-# Teamwork
-Teamwork is an internal social network for employees of an organization. The goal of this application is to facilitate more interaction between colleagues and promote team bonding.
+# teamwork-backend
 
-After running npm init, create a ".env" file. Make sure dotenv is installed. In the dot env file create the following environment variables:
+an application for allowing employee's interact with one another in the organisation
 
-SECRET_KEY = ( provide any key )
 
-NB: Should have a cloudinary account
-CLOUDINARY_NAME = ( provide name )
-CLOUDINARY_KEY = ( provide key )
-CLOUDINARY_SECRET = ( secret key)
-
-PGHOST='localhost'
-PGUSER=postgres
-PGDATABASE= ( database )
-PGPASSWORD= ( password )
-PGPORT=5432
-
-ADMINPASSWORD=teamworkAdmin
-
-Before running mocha, to test. Please makes sure you run "npm start" once, this allows the app create the tables needed. After that, terminate the process. Then you can run npm test
+[![Build Status](https://travis-ci.org/akinniyThomas/teamwork-backend.svg?branch=develop)](https://travis-ci.org/akinniyThomas/teamwork-backend)  [![Coverage Status](https://coveralls.io/repos/github/akinniyThomas/teamwork-backend/badge.svg?branch=develop)](https://coveralls.io/github/akinniyThomas/teamwork-backend?branch=develop)   [![Code Climate](https://codeclimate.com/github/akinniyThomas/teamwork-backend.png)](https://codeclimate.com/github/akinniyThomas/teamwork-backend)  
